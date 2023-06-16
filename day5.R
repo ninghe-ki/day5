@@ -65,13 +65,34 @@ load_all()
 x <- "alfa,bravo,charlie,delta"
 str_split_one(x, pattern = ",")
 
-
 rename_files("strsplit1", "str_split_one")
 
+test_that("str_split_one() splits a string", {
+  expect_equal(str_split_one("a,b,c", ","), c("a", "b", "c"))
+})
+
+test_that("str_split_one() errors if input length > 1", {
+  expect_error(str_split_one(c("a,b","c,d"), ","))
+})
+
+test_that("str_split_one() exposes features of stringr::str_split()", {
+  expect_equal(str_split_one("a,b,c", ",", n = 2), c("a", "b,c"))
+  expect_equal(str_split_one("a.b", stringr::fixed(".")), c("a", "b"))
+})
+
+document()
+
+load_all()
+str_split_one("a, b, c", pattern = ", ")
 
 
-
-
+vector <- c("a", "b", "c")
+# Using replace()
+new_vector <- replace(vector, vector == "a", 1)
+new_vector <- replace(new_vector, vector == "b", 2)
+new_vector <- replace(new_vector, vector == "c", 3)
+# Result
+print(new_vector)
 
 
 
