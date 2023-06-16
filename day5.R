@@ -19,7 +19,27 @@ load_all()
 usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
 load_all()
 
-strsplit1
+(x <- "alfa,bravo,charlie,delta")
+strsplit1(x, split = ",")
+exists("strsplit1", where = globalenv(), inherits = FALSE)
+
+check()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
