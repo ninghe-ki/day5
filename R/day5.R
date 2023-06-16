@@ -16,8 +16,8 @@ strsplit1 <- function(x, split) {
 use_r("strsplit1")
 
 load_all()
-
-
+usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
+load_all()
 
 
 
