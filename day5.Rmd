@@ -1,0 +1,21 @@
+---
+title: "day5"
+output: html_document
+date: "2023-06-16"
+---
+
+```{r}
+#install.packages( c("devtools", "roxygen2", "testthat", "knitr") )
+create_package("/Users/ninghe/Desktop/courses/RaukR2023/day5/")
+
+```
+
+
+
+
+
+
+
+
+
+
