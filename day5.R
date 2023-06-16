@@ -61,8 +61,12 @@ str_split_one <- function(string, pattern, n = Inf) {
     character()
   }
 }
+load_all()
+x <- "alfa,bravo,charlie,delta"
+str_split_one(x, pattern = ",")
 
 
+rename_files("strsplit1", "str_split_one")
 
 
 
