@@ -95,5 +95,27 @@ new_vector <- replace(new_vector, vector == "c", 3)
 print(new_vector)
 
 
+use_readme_rmd()
+build_readme()
+check()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
